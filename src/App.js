@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import {RestaurantScreen} from './screens/RestaurantScreen';
 
 function App() {
   return (
     <div className="App">
       Hello World!
+      <RestaurantScreen />
     </div>
   );
 }
