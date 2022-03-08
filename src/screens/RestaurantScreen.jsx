@@ -1,14 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
 import {RestaurantList} from '../components/RestaurantList';
 
 export const RestaurantScreen = () => {
   return (
-    <View>
-      <Text>RestaurantScreen</Text>
+    <div>
+      <h1>RestaurantScreen</h1>
       <RestaurantList />
-    </View>
+    </div>
   );
 };
-
-const styles = StyleSheet.create({});

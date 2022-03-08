@@ -1,12 +1,12 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React, {useEffect} from 'react';
 
-export const RestaurantList = () => {
-  return (
-    <View>
-      <Text>RestaurantList</Text>
-    </View>
-  );
+export const RestaurantList = ({loadRestaurants}) => {
+    useEffect(() => {
+        loadRestaurants();
+    }, [loadRestaurants]);
+    return (
+        <div>
+            <h1>Restaurant List</h1>
+        </div>
+    );
 };
-
-const styles = StyleSheet.create({});
