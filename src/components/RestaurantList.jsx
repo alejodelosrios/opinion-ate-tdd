@@ -1,12 +1,14 @@
 import React, {useEffect} from 'react';
 
-export const RestaurantList = ({loadRestaurants}) => {
+export const RestaurantList = ({loadRestaurants, restaurants}) => {
     useEffect(() => {
         loadRestaurants();
     }, [loadRestaurants]);
     return (
-        <div>
-            <h1>Restaurant List</h1>
-        </div>
+        <ul>
+            {restaurants.map(restaurant => (
+                <li key={restaurant.id}>{restaurant.name}</li>
+            ))}
+        </ul>
     );
 };
